@@ -1,9 +1,28 @@
-# Environment variables and secrets
+# Secrets
 .env
 .env.*
 !.env.example
 
-# Local SQLite databases and sidecar files
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Local databases
 *.db
-*.db-shm
-*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs and cache
+*.log
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
